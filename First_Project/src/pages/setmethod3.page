@@ -1,0 +1,21 @@
+<apex:page controller="ExampleCalculator" >
+    <apex:form >
+        <apex:pageblock title="Calculator">
+            <apex:pageBlockSection columns="1" title="Simple Operations" collapsible="false" >
+            <apex:pageblockSectionItem >
+                <apex:outputLabel >Enter A Value</apex:outputLabel>
+                <apex:inputText value="{!aValue}"/>
+            </apex:pageblockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel >Enter B Value</apex:outputLabel>
+                <apex:inputtext value="{!bValue}"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageblockSectionItem >
+            <apex:commandButton action="{!result}" value="submit"/> 
+                 <apex:outputtext value="{!result}" > </apex:outputtext> 
+            </apex:pageblockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageblock>
+    </apex:form>
+  
+</apex:page>

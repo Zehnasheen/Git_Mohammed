@@ -1,0 +1,12 @@
+<apex:page controller="ParenttoChild">
+    <apex:form >
+        <apex:pageblock >
+            <apex:pageblockTable value="{!acc}" var="ac">
+                <apex:column value="{!ac.name}"/>
+                <apex:column value="{!ac.industry}"/>
+                
+            </apex:pageblockTable>
+        </apex:pageblock>
+    </apex:form>
+
+  </apex:page>

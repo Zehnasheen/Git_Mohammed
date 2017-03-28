@@ -1,0 +1,9 @@
+<apex:page controller="OptionList">
+    <apex:form >
+        <apex:outputLabel value="Select the Country:"></apex:outputLabel>
+        <apex:selectList value="{!countries}" multiselect="true" size="1">
+            <apex:selectOption value="{!items}"/>
+        </apex:selectList>
+    </apex:form>
+  
+</apex:page>

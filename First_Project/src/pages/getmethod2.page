@@ -1,0 +1,5 @@
+<apex:page controller="Example2">
+    <apex:outputLabel >My Younger  brother name is {!name}</apex:outputLabel>
+
+  
+</apex:page>

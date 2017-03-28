@@ -1,0 +1,24 @@
+<apex:page controller="afExample" >
+    <apex:form >
+        <apex:actionFunction name="Hello" action="{!SayHello}" rerender="out" status="mystatus"/>
+    </apex:form>
+    <apex:outputPanel id="out">
+        <apex:outputText value=" :My name is Abrar"> Hi</apex:outputText>
+            <apex:actionStatus startText="Testing....." id="mystatus"></apex:actionStatus>
+    </apex:outputPanel> 
+    
+        
+    <script>
+        window.setTimeout('say hello',2000)
+    </script>
+    <p><apex:outputText value="Clicked? {!state}" id="Showstate"></apex:outputText></p>
+    
+    <apex:outputPanel onclick="methodoneinjavascript ('yes!')" styleClass="btn">
+        CLICK ME
+    </apex:outputPanel>
+        <apex:form >
+                <apex:actionFunction action="{!methodOne}" name="methodOneInJavascript" rerender="showstate">
+                <apex:param name="first param" assignTo="{!state}" value="" />
+            </apex:actionFunction>
+        </apex:form>
+</apex:page>

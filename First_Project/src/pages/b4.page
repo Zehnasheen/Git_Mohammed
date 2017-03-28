@@ -1,0 +1,11 @@
+<apex:page standardController="Account" recordSetVar="abrar">
+    <apex:pageblock title="List of Account Information">
+        <apex:pageBlockTable value="{!abrar}" var="ab">
+            <apex:column value="{!ab.Name}"/>
+            <apex:column value="{!ab.type}"/>
+            <apex:column value="{!ab.industry}"/>
+            <apex:column value="{!ab.site}" / >
+        </apex:pageBlockTable>
+    </apex:pageblock>
+  
+</apex:page>

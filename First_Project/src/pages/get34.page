@@ -1,0 +1,11 @@
+<apex:page controller="get34" >
+    <apex:form >
+        <apex:outputLabel value="enter the name here" />
+            <apex:inputtext value="{!userinput}">
+            <apex:actionSupport event="onclick" rerender="display" />
+            </apex:inputtext>
+        <apex:outputpanel id="display">
+        <apex:outputText value="The Name entered is {!userinput}"/>
+        </apex:outputpanel>
+</apex:form>    
+</apex:page>

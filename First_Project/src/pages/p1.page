@@ -1,0 +1,6 @@
+<apex:page >
+    Welcome to {! $user.FirstName}  Environment<br/><br/>
+    User Email : {! $user.Email}<br/><br/>
+    Current page URL: {! $currentpage.URL}<br/>
+    Current page Name: {! $currentpage.Name}
+</apex:page>

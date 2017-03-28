@@ -1,0 +1,7 @@
+<apex:page controller="defaultgetset">
+    <apex:form >
+        <apex:outputLabel value="My Name Is "></apex:outputLabel>
+            <apex:inputText value="{!userInput}"/>
+    </apex:form>
+  
+</apex:page>

@@ -1,0 +1,5 @@
+<apex:page controller="get2">
+<apex:form >
+    <apex:inputText value="{!userinput}"/>
+    </apex:form>
+</apex:page>

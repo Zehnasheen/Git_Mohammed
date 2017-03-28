@@ -1,0 +1,7 @@
+<apex:page controller="get1">
+  <apex:form >
+      <apex:outputtext title="Enter the name here">
+      <apex:inputText value="{!userinput}"/>
+      </apex:outputtext>
+  </apex:form>
+</apex:page>

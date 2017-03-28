@@ -1,0 +1,20 @@
+<apex:page standardController="contact" recordSetVar="contacts">
+    <apex:form >
+        <apex:pageblock title="List of Contacts">
+            <apex:pageblockSection >
+                 <apex:dataList var="r" value="{!contacts}" type="a">
+                    {!r.name}
+                </apex:dataList>
+                 <apex:dataList var="r" value="{!contacts}" type="a" lang="abrar">
+                    {!r.phone}
+                </apex:dataList>
+                
+            </apex:pageblockSection>
+                <apex:panelGrid columns="2">
+                    <apex:commandLink action="{!Previous}"> PREV </apex:commandLink>
+                    <apex:commandLink action="{!Next}"> NEXT </apex:commandLink>
+                </apex:panelGrid>
+        </apex:pageblock>
+    </apex:form>
+  
+</apex:page>

@@ -1,0 +1,7 @@
+<apex:page >
+    Welcome to {! $User.LastName} Environment <br/>
+    {!$User.Email} : Abrar Mohammed <br/>
+    Current pageName: {! $CurrentPage.url}<br/>
+    Current PageName: {! $CurrentPage.Name}
+  
+</apex:page>

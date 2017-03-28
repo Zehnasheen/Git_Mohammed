@@ -1,0 +1,22 @@
+<apex:page standardController="contact" recordSetVar="contacts" >
+    <apex:form >
+        <apex:pageBlock title="List of contacts">
+            <apex:panelGrid columns="3">
+                <apex:outputLabel value="VIEW :"/>
+                    <apex:selectList value="{!FilterId}" size="1">
+                        <apex:selectOptions value="{!Listviewoptions}" />
+                            <apex:actionSupport event="onchange" id="Abrar"/>
+                        
+                    </apex:selectList>
+            </apex:panelGrid>
+                <apex:pageBlockSection >
+                    <apex:dataList var="q" value="{!contacts}" id="Abrar" type="1">
+                        {!q.Phone}
+                    </apex:dataList>
+                </apex:pageBlocksection>
+            
+            
+        </apex:pageBlock>
+    </apex:form>
+  
+</apex:page>

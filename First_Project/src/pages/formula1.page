@@ -1,0 +1,4 @@
+<apex:page renderAs="{!if($CurrentPage.parameters.p == null, null, 'pdf')}"
+           controller="MyController"> 
+  Hello World!
+</apex:page>

@@ -1,0 +1,14 @@
+<apex:page controller="createdsetget">
+    <apex:form >
+        <apex:outputLabel value="Please enter your name">
+            <apex:inputText value="{!userinput}">
+                <apex:actionSupport event="onClick"  rerender="a"/>
+                </apex:inputtext>
+        </apex:outputLabel>
+            <apex:outputPanel id="a">
+                <apex:outputlabel value=" Entered Name is: {!userinput}">
+                </apex:outputlabel>
+            </apex:outputPanel>
+            
+    </apex:form>
+    </apex:page>

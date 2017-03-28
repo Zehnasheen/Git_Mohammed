@@ -1,0 +1,26 @@
+<apex:page >
+    <apex:form >
+        <apex:pageblock id="pb">
+        <apex:outputLabel > Enter UserName
+        </apex:outputLabel>
+        <apex:inputText id="uid"/>
+        <apex:outputLabel > Enter Password
+        </apex:outputLabel>
+        <apex:inputtext id="pwd"/>
+        <apex:commandButton value="Login" action="{!show}"/>
+        </apex:pageblock>
+        <script>
+        function show(){
+        var user = document.getElementById("{! $component.pb.uid}").value;
+        var password= document.getElementById("{! $component.pb.pwd}").value;
+        if(password=='' && user==''){
+            alert(check the userid and password);
+            }
+            else{
+            alert('login success');
+            }
+        }
+        </script>
+        </apex:form>
+     
+</apex:page>

@@ -1,0 +1,10 @@
+<apex:page controller="ActionFunction">
+    <apex:form >
+        <apex:actionFunction name="SayHello" action="{!Hello}" rerender="out" status="Status"/>
+    </apex:form>
+    <apex:outputPanel id="out">
+        <apex:outputText value="Hello"></apex:outputText>
+    </apex:outputPanel>
+    
+  
+</apex:page>

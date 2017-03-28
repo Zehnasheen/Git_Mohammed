@@ -1,0 +1,18 @@
+<apex:page controller="ListExample" >
+    <apex:form >
+        <apex:pageblock >
+        <apex:pageBlockSection title="List of Records">
+        
+            <apex:pageBlockTable value="{!result}" var="r">
+            <apex:column headerValue="Name">
+                <apex:inputField value="{!r.name}"/>
+                </apex:column>
+                <apex:column headerValue="Industry">
+                <apex:inputField value="{!r.Industry}"/>
+                </apex:column>
+            </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageblock>
+    </apex:form>
+    
+</apex:page>

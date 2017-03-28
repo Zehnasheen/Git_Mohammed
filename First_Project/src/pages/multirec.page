@@ -1,0 +1,15 @@
+<apex:page standardController="Account" recordSetVar="List" >
+    <apex:pageBlock title="Getting List of Accounts" mode="edit">
+        <apex:pageblockTable value="{!List}" var="p">
+            <apex:column value="{!p.Name}"/>
+            <apex:column value="{!p.Phone}"/>
+            <apex:column value="{!p.Site}"/>
+            <apex:column value="{!p.Industry}"/>
+            <apex:column value="{!p.Type}"/>
+            <apex:column value="{!p.Industry}"/>
+            <apex:column value="{!p.Type}"/>
+            
+        </apex:pageblockTable>
+    </apex:pageBlock>
+
+</apex:page>

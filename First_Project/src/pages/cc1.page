@@ -1,0 +1,9 @@
+<apex:page controller="MyCustomController" >
+    <apex:form >
+        Account Name: <apex:inputText value="{!name}"/> 
+        Account Name: <apex:inputText value="{!NAME1}"/>
+        <apex:commandButton value="Save"/>
+    </apex:form>
+  
+  
+</apex:page>

@@ -1,0 +1,4 @@
+trigger HelloAbrar on Account (before insert) {
+    System.debug('Hello sheikh');
+
+}

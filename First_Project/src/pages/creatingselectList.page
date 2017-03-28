@@ -1,0 +1,25 @@
+<apex:page controller="ImportantSelectList">
+    <apex:form >
+        <apex:selectList value="{!countries}" size="2" multiselect="true">
+            <apex:selectOptions value="{!items}"/>
+
+        </apex:selectList><p/>
+            <apex:commandButton value="test" action="{!test}" rerender="out" status="status"/>
+    </apex:form>
+        <apex:outputPanel id="out">
+            <apex:actionStatus id="status" startText=" stattTesting">
+            
+            <apex:facet name="STOP">
+            
+                
+                
+        <apex:outputPanel >
+            <p> you have selected:</p>
+                <apex:dataList value="{!countries}" var="c">{!c}</apex:dataList>
+            </apex:outputPanel>
+            </apex:facet>
+            </apex:actionStatus>
+            </apex:outputPanel>
+            
+
+</apex:page>

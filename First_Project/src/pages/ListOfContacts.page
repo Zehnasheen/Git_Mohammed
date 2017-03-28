@@ -1,0 +1,15 @@
+<apex:page controller="ParentChild">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageblockTable value="{!cont}" var="c">
+                <apex:column value="{!c.name}"/>
+                <apex:column value="{!c.Account.name}"/>
+                <apex:column value="{!c.Account.industry}"/>
+                
+            </apex:pageblockTable>
+        </apex:pageBlock>
+        <apex:commandButton value="Click" action="{!show}"/>
+    </apex:form>
+  
+  
+</apex:page>

@@ -1,0 +1,8 @@
+<apex:page >
+    Welcome to Abrar
+    Welcome to UserName : {! $User.FirstName}<p/>
+    Welcome to UserEmail : {!$User.Email}<p/>
+    Current page Name : <b>{!$CurrentPage.Name}</b><p/>
+    Current Website URL : <b>{!$CurrentPage.URL}</b>
+    
+</apex:page>

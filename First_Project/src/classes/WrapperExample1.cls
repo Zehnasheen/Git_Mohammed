@@ -1,0 +1,2 @@
+public class WrapperExample1 {
+}

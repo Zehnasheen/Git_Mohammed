@@ -1,0 +1,12 @@
+<apex:page controller="ArrayExample">
+    <apex:form >
+        <apex:pageblock >
+            <apex:pageblockTable value="{!myval}" var="s">
+                <apex:column value="{!s}"/>
+            </apex:pageblockTable>
+               <apex:outputlabel >List of {!name} Attributes</apex:outputlabel>
+        </apex:pageblock>
+    </apex:form>   
+    
+  
+</apex:page>

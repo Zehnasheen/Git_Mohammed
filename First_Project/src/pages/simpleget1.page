@@ -1,0 +1,12 @@
+<apex:page controller="simpleget1">
+    <apex:form >
+        <apex:outputLabel >Enter your name here</apex:outputLabel>
+        <apex:inputtext value="{!username}">
+            <apex:actionSupport event="onclick" rerender="display"/>
+                </apex:inputtext>
+                <apex:outputPanel id="display"> 
+                    <apex:outputText >"The Name Entered Is {!username}"</apex:outputText>
+                </apex:outputPanel>
+    </apex:form>
+      
+</apex:page>

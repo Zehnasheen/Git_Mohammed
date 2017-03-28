@@ -1,0 +1,15 @@
+<!-- Page: -->
+<apex:page controller="exampleCon123">
+<apex:form >
+<apex:outputpanel id="counter">
+<apex:commandButton value="Click Me!" action="{!count}"/>
+<apex:outputText value="{!count}"></apex:outputText>
+<apex:actionSupport event="onclick"
+action="{!incrementCounter}"
+rerender="counter" status="counterStatus"/>
+</apex:outputpanel>
+<apex:actionStatus id="counterStatus"
+startText=" (incrementing...)"
+stopText=" (done)"/>
+</apex:form>
+</apex:page>

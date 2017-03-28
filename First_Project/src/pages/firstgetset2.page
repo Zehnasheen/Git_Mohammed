@@ -1,0 +1,14 @@
+<apex:page controller="complexsetget" >
+    <apex:form >
+        <apex:outputLabel value="Enter Your Name Here:"></apex:outputLabel>
+            <apex:inputText value="{!userinput}">
+                <apex:actionSupport event="onClick" reRender="display"/>
+            </apex:inputtext>
+                <apex:outputPanel id="display">
+                    <apex:outputLabel value="The Name Entered is: {!userinput}"></apex:outputLabel>
+                </apex:outputPanel>
+                    
+            
+    </apex:form>
+  
+</apex:page>

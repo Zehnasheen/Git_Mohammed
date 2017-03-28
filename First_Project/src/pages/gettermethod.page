@@ -1,0 +1,4 @@
+<apex:page controller="Example" >
+    <apex:outputLabel >{!name}</apex:outputLabel><br/>
+    <apex:outputLabel >{!name1}</apex:outputLabel>
+  </apex:page>

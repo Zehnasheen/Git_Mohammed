@@ -1,0 +1,14 @@
+<apex:page controller="ContactList">
+    <apex:form >
+        <apex:pageblock >
+            <apex:pageblockTable value="{!con}" var="a">
+                <apex:column value="{!a.name}"/>
+                <apex:column value="{!a.Account.name}"/>
+                <apex:column value="{!a.Account.Industry}"/>
+            </apex:pageblockTable>
+        </apex:pageblock>
+            <apex:commandButton value="Show" action="{!show}"/>
+    </apex:form>
+
+  
+</apex:page>

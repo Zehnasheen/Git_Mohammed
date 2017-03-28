@@ -1,0 +1,16 @@
+<apex:page standardcontroller="Account" recordSetVar="Abbu">
+    <apex:form >
+        <apex:pageBlock title="Lsit of Contacts">
+            <apex:pageBlockTable value="{!Abbu}" var="Jar">
+                <apex:column value="{!Jar.Name}"/>
+                <apex:column headerValue="Site">
+                <apex:inputField value="{!Jar.Site}" />
+                </apex:column>
+                <apex:column headerValue="Industry">
+                <apex:inputField value="{!Jar.Industry}"/>
+                </apex:column>
+                </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+  
+</apex:page>

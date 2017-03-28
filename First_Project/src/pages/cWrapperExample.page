@@ -1,0 +1,19 @@
+<apex:page controller="cWrapperExample1">
+    <apex:form >
+        <apex:pageblock >
+            <apex:pageblockTable value="{!Lstwrp}" var="w">
+                <apex:column headerValue="Sl No"><apex:outputText value="{!w.slno}"/></apex:column>
+                <apex:column headerValue="Select"><apex:inputCheckbox value="{!w.checkbox}"/></apex:column>
+                <apex:column value="{!w.acc.name}"/>
+                <apex:column value="{!w.acc.type}" headerValue="TYPE"/>
+                <apex:column value="{!w.acc.CustomerPriority__c}"/>
+                <apex:column value="{!w.acc.SLA__c}" headerValue="SLA Number"/>
+                <apex:column value="{!w.acc.SLAExpirationDate__c }"/>
+            
+                
+            </apex:pageblockTable>
+            
+        </apex:pageblock>
+    </apex:form>
+  
+</apex:page>

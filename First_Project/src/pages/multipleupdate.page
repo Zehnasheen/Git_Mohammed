@@ -1,0 +1,17 @@
+<apex:page standardController="Account" recordSetVar="Comment">
+    <apex:form >
+    <apex:pageBlock title="List of All Accounts to Update">
+        <apex:pageMessages />
+            <apex:pageblockButtons >
+                <apex:commandButton action="{!Save}" value="Commit"/>
+            </apex:pageblockButtons>
+            <apex:pageblockTable value="{!comment}" var="com">
+            <apex:column value="{!com.Name}"/>
+            <apex:column headervalue="Industry">
+            <apex:inputField value="{!com.Industry}"/>
+            </apex:column>
+            </apex:pageblockTable>
+    </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

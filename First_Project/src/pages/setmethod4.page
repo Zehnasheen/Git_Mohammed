@@ -1,0 +1,6 @@
+<apex:page controller="Abrar1">
+    <apex:form >
+    <apex:outputLabel >Enter your name</apex:outputLabel><nbsp></nbsp>
+    <apex:outputtext value="{!name}"/>
+  </apex:form>
+</apex:page>

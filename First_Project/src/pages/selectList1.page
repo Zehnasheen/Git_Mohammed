@@ -1,0 +1,9 @@
+<apex:page controller="sampleCon">
+
+    <apex:form >
+
+        <apex:selectCheckboxes value="{!countries}" />
+        <apex:selectOptions value="{!items}"/>
+
+          </apex:form>  
+</apex:page>

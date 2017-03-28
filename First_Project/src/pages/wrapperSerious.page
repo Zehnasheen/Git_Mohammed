@@ -1,0 +1,14 @@
+<apex:page controller="WrapperSelectedCheckbox">
+    <apex:form >
+        <apex:pageblock >
+            <apex:pageblockTable value="{!wrplist}" var="R">
+                <apex:column headerValue="SLno"><apex:outputText >{!R.SLno}</apex:outputText></apex:column>
+                <apex:column headerValue="Select" ><apex:inputcheckbox value="{!R.checkbox}"/></apex:column>
+                <apex:column value="{!R.acc.name}" headerValue="Names"/>
+                <apex:column value="{!R.acc.Phone}"/>
+                <apex:column value="{!R.acc.AccountNumber}"/>
+            </apex:pageblockTable>
+        </apex:pageblock>
+    </apex:form>
+  
+</apex:page>

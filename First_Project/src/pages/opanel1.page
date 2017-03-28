@@ -1,0 +1,16 @@
+<apex:page id="pg">
+    <apex:form id="fm">
+    <apex:pageBlock id="pb">
+    <script type = "type/javascript">
+        function show(){
+            var name= document.getelementbyid('{! $component.one}').value;
+            var myname = document.getelementbyid('pg;fm;pb;one').value;
+            alert(myname);
+        }
+        </script>
+        <apex:commandButton value="Click" action="{!show}" />
+            </apex:pageBlock>
+
+    </apex:form>
+
+</apex:page>

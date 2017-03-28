@@ -1,0 +1,28 @@
+<apex:page standardController="Account" recordSetVar="Accounts">
+    <apex:pageblock title="List Of Accounts">
+        <apex:form >
+            <apex:panelGrid columns="3">
+            
+                <apex:outputLabel value="View :"></apex:outputLabel>
+                    <apex:selectList value="{!FilterId}" size="1">
+                    <apex:actionSupport event="onchange" rerender="List"/>
+                        <apex:selectOptions value="{!ListViewOptions}" >
+                            
+                        </apex:selectOptions>
+                    </apex:selectList>
+           </apex:panelGrid> 
+                          <apex:pageblockSection >
+               <apex:dataList var="w" value="{!Accounts}" id="List" type="1">
+                   {!w.name}
+               </apex:dataList>
+               
+                  
+                    
+               </apex:pageblockSection>
+               </apex:form>
+
+            
+           
+    
+    </apex:pageblock>
+</apex:page>

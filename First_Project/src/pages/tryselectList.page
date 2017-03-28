@@ -1,0 +1,9 @@
+<apex:page controller="SelectList45" >
+    <apex:form >
+        <apex:selectList value="{!countries}" size="2">
+        </apex:selectList>
+
+    </apex:form>
+    
+  
+</apex:page>

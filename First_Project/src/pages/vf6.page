@@ -1,0 +1,11 @@
+<apex:page StandardController="Account">
+    <apex:form >
+        <apex:pageBlock title="Update Exixting Name">
+        Change New AccountName:
+        <apex:inputField value="{!Account.name}"/><p/>
+        <apex:inputField value="{!Account.phone}"/><p/>
+      <!--  <apex:inputField value="{!Account.Email}"/><p/> -->
+        <apex:CommandButton action="{!Save}" value="SAVE"/>>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

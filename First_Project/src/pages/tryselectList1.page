@@ -1,0 +1,12 @@
+<apex:page controller="AbrarSelect1">
+    <apex:form >
+        <apex:outputLabel > Name</apex:outputLabel>
+            <apex:inputtext value="{!userinput}">
+                <apex:actionsupport event="onClick" rerender="display"/>
+            </apex:inputtext>    
+                
+                <apex:outputPanel id="display">
+                    <apex:outputLabel >Entered userinput value is: {!userinput}</apex:outputLabel>
+                </apex:outputPanel>
+    </apex:form>
+</apex:page>

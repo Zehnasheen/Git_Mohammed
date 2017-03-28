@@ -1,0 +1,23 @@
+<apex:page StandardController="Account" recordSetVar="Abbu">
+    <apex:form >
+    <apex:pageblock >
+    <apex:pageMessages />
+        <apex:pageblockButtons >
+            <apex:commandButton action="{!Save}" value="SAVE"/>
+        </apex:pageblockButtons>
+            <apex:pageBlockTable value="{!Abbu}" var="jar">
+                <apex:column value="{!jar.Name}"/>
+                <apex:column headervalue="Industry">
+                    <apex:inputField value="{!jar.Industry}"/>
+                        </apex:column>
+                        <apex:column headerValue="Phone">
+                        <apex:inputField value="{!jar.Phone}"/>
+                        </apex:column>
+                        <apex:column headervalue="Site">
+                        <apex:inputField value="{!jar.Site}"/>
+                        </apex:column>
+            </apex:pageBlockTable>
+    </apex:pageblock>
+    </apex:form>
+  
+</apex:page>

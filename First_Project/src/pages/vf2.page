@@ -1,0 +1,7 @@
+<apex:page >
+  Welcome to Abrar SFDC <br/>
+  Welcome to UserName : {! $User.FirstName} {! $User.LastName}<br/>
+  User Email: {! $User.Email} <br/>
+  Current Page Name: <b>{! $CurrentPage.Name}</b> <br/>
+  Current Page URL: <b>{! $CurrentPage.URL}</b>
+</apex:page>

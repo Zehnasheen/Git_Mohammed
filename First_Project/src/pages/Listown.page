@@ -1,0 +1,10 @@
+<apex:page controller="MyList">
+    <apex:form >
+        <apex:selectList value="{!countries}" size="1">
+            <apex:SelectOptions value="{!items}"/>
+            
+        </apex:selectList>
+        
+    </apex:form>
+  
+</apex:page>

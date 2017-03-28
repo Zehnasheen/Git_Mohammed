@@ -1,0 +1,35 @@
+<apex:page standardController="Account" recordSetVar="Abby" >
+    <apex:form >
+        <apex:pageBlock title="List of Accounts">
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!Save}" value="Commit"/>
+            
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="My Accounts" columns="3">
+                <apex:pageBlockTable value="{!Abby}" var="A">
+                <apex:column value="{!A.Name}"/>
+                    <apex:column headervalue="Industry" >
+                        <apex:inputField value="{!A.Industry}"/>
+                            </apex:column>
+                            <apex:column headerValue="Site">
+                                <apex:inputField value="{!A.Site}"/>
+                                </apex:column>
+                                <apex:column headerValue="Phone">
+                                <apex:inputField value="{!A.Phone}"/>
+                                </apex:column>
+                                <apex:column headerValue="FAX">
+                                <apex:inputField value="{!A.Fax}"/>
+                                </apex:column>
+                                <apex:column headerValue="Type">
+                                <apex:inputField value="{!A.Type}"/>
+                                </apex:column>
+                                <apex:column headerValue="Type">
+                                <apex:inputField value="{!A.Type}"/>
+                                </apex:column>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+     
+  
+</apex:page>

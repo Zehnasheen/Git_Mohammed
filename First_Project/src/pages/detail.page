@@ -1,0 +1,5 @@
+<apex:page standardController="contact">
+    <apex:detail subject="{!contact.id}"  inlineEdit="true" relatedList="true" relatedListHover="true" title="true"/>
+  
+  
+</apex:page>

@@ -1,0 +1,7 @@
+<apex:page controller="simplegetset">
+    <apex:form >
+        <apex:outputLabel >"Enter user name"</apex:outputLabel>
+            <apex:inputText value="{!username}"/>
+    </apex:form>
+  
+</apex:page>

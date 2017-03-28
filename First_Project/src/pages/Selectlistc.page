@@ -1,0 +1,15 @@
+<apex:page controller="Listselect">
+    <apex:form >
+        <apex:pageBlock >
+                <apex:pageBlockSection >
+                    <apex:pageBlockSectionItem >
+                        Custom Piklist:
+                            <apex:selectList value="{!Picklist}" size="1">
+                                <apex:selectOption value="{!items}" />
+                                </apex:selectList>
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+  
+</apex:page>
